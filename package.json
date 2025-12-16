@@ -1,0 +1,39 @@
+{
+  "name": "chandrakant-koneti-portfolio",
+  "version": "1.0.0",
+  "description": "Professional portfolio website for Chandrakant Koneti - Full Stack Developer & AI Engineer",
+  "main": "index.html",
+  "scripts": {
+    "dev": "live-server --port=3000",
+    "build": "echo 'Portfolio is ready for deployment!'",
+    "deploy": "echo 'Deploy to your favorite hosting platform'"
+  },
+  "keywords": [
+    "portfolio",
+    "full-stack",
+    "developer",
+    "ai-engineer",
+    "web-development",
+    "machine-learning",
+    "react",
+    "nodejs",
+    "python"
+  ],
+  "author": {
+    "name": "Chandrakant Koneti",
+    "email": "chandrakantkonetius@gmail.com",
+    "url": "https://linkedin.com/in/chandrakant-koneti"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CKoneti/portfolio"
+  },
+  "homepage": "https://ckoneti.github.io",
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chandrakant Koneti - Full Stack Developer & AI Engineer specializing in React, Node.js, Python, AWS, and Machine Learning. 5+ years of experience building scalable web applications and AI solutions.">
+    <meta name="keywords" content="Chandrakant Koneti, Full Stack Developer, AI Engineer, React, Node.js, Python, AWS, Machine Learning, Web Developer, Software Engineer">
+    <meta name="author" content="Chandrakant Koneti">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Chandrakant Koneti - Full Stack Developer & AI Engineer">
+    <meta property="og:description" content="Passionate Full Stack Developer & AI Engineer with 5+ years of experience building scalable applications and AI solutions.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ckoneti.github.io">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Chandrakant Koneti - Portfolio">
+    <meta name="twitter:description" content="Full Stack Developer & AI Engineer">
+    <title>Chandrakant Koneti - Portfolio | Full Stack Developer & AI Engineer</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👨‍💻</text></svg>">
+
+    <!-- Preconnect to external resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Internal CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Chandrakant Koneti",
+        "jobTitle": "Full Stack Developer & AI Engineer",
+        "email": "chandrakantkonetius@gmail.com",
+        "telephone": "+1-919-395-6914",
+        "url": "https://ckoneti.github.io",
+        "sameAs": [
+            "https://linkedin.com/in/chandrakant-koneti",
+            "https://github.com/CKoneti"
+        ],
+        "knowsAbout": [
+            "Full Stack Development",
+            "Machine Learning",
+            "Artificial Intelligence",
+            "React",
+            "Node.js",
+            "Python",
+            "AWS",
+            "TensorFlow"
+        ]
+    }
+    </script>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">Portfolio</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
+                <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+                <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+                <li><a href="#experience" class="nav-link" data-section="experience">Experience</a></li>
+                <li><a href="#education" class="nav-link" data-section="education">Education</a></li>
+                <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+                <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <div class="particles"></div>
+            <div class="gradient-orb orb1"></div>
+            <div class="gradient-orb orb2"></div>
+            <div class="gradient-orb orb3"></div>
+        </div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <p class="hero-greeting animate-on-scroll">Welcome to my portfolio</p>
+                    <h1 class="hero-title">
+                        Chandrakant Koneti
+                    </h1>
+                    <div class="typing-container">
+                        <p class="role">
+                            <span id="typed-text"></span><span class="cursor">|</span>
+                        </p>
+                    </div>
+                    <p class="hero-description">
+                        Passionate about building intelligent web solutions and cutting-edge AI applications.
+                        Transforming complex problems into elegant, scalable solutions with modern technologies.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary glow-effect">
+                            <i class="fas fa-envelope"></i>
+                            Get In Touch
+                        </a>
+                        <a href="#projects" class="btn btn-secondary">
+                            <i class="fas fa-folder-open"></i>
+                            View Projects
+                        </a>
+                        <a href="resume.pdf" class="btn btn-outline" download>
+                            <i class="fas fa-file-download"></i>
+                            Download CV
+                        </a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="5">1</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="50">4</span>
+                            <span class="stat-label">Projects</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image-container">
+                <div class="profile-card-3d">
+                    <div class="profile-img">
+                        <div class="avatar-placeholder">
+                            <img src="images/profile.jpg" alt="Chandrakant Koneti" class="profile-picture">
+                            <div class="status-badge">Open to Work</div>
+                        </div>
+                    </div>
+                    <div class="floating-card card1">
+                        <i class="fas fa-code"></i>
+                        <span>Full Stack</span>
+                    </div>
+                    <div class="floating-card card2">
+                        <i class="fas fa-brain"></i>
+                        <span>AI/ML</span>
+                    </div>
+                    <div class="floating-card card3">
+                        <i class="fas fa-cloud"></i>
+                        <span>Cloud</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <p>Scroll Down</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section-animate">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">About Me</h2>
+            <div class="about-content">
+                <div class="about-main">
+                    <div class="about-text animate-on-scroll">
+                        <h3>Building Intelligent Solutions That Drive Real Impact</h3>
+                        <p>
+                            As a <strong>Full Stack Developer & AI Engineer</strong> with 5+ years of experience, I transform complex business challenges
+                            into elegant, scalable solutions that deliver measurable results. My expertise spans from crafting high-performance
+                            frontend interfaces to architecting robust backend systems and integrating cutting-edge AI technologies.
+                        </p>
+
+                        <div class="impact-metrics">
+                            <div class="metric-item">
+                                <span class="metric-number">$2K+</span>
+                                <span class="metric-label">Annual cost savings through AWS optimization</span>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-number">98%</span>
+                                <span class="metric-label">Reduction in manual workflow retries</span>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-number">400%</span>
+                                <span class="metric-label">UI performance improvement with optimization</span>
+                            </div>
+                        </div>
+
+                        <p>
+                            My track record speaks for itself: I've engineered serverless solutions that eliminated 30GB of data across
+                            20+ Kubernetes clusters, slashed application load times from 12s to 3.5s, and boosted test coverage by 46%.
+                            Whether it's building Python AWS Lambdas for multi-tenant systems or developing real-time streaming data pipelines
+                            with Kafka and RabbitMQ, I consistently deliver solutions that exceed performance expectations.
+                        </p>
+
+                        <p>
+                            Currently driving innovation at <strong>Reva.ai</strong>, I'm at the forefront of AI integration, developing
+                            LangChain applications with Amazon Bedrock and engineering real-time customer usage logging systems.
+                            My approach combines technical excellence with business acumen, ensuring every line of code contributes to
+                            organizational growth and user satisfaction.
+                        </p>
+
+                        <p>
+                            I'm not just a developer; I'm a problem-solver who thrives on pushing the boundaries of what's possible
+                            with modern technology. Let's build something extraordinary together.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section-animate">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Technical Skills</h2>
+            <div class="skills-grid">
+                <!-- Languages -->
+                <div class="skill-group animate-on-scroll">
+                    <h3><i class="fas fa-code"></i> Languages</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="fab fa-java"></i> Java</span>
+                        <span class="skill-tag"><i class="fab fa-python"></i> Python</span>
+                        <span class="skill-tag"><i class="fab fa-node-js"></i> Node.js</span>
+                        <span class="skill-tag"><i class="fab fa-js"></i> JavaScript</span>
+                        <span class="skill-tag"><i class="fab fa-html5"></i> HTML/CSS</span>
+                        <span class="skill-tag"><i class="fas fa-code"></i> TypeScript</span>
+                    </div>
+                </div>
+
+                <!-- Frontend -->
+                <div class="skill-group animate-on-scroll">
+                    <h3><i class="fas fa-laptop-code"></i> Frontend</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="fab fa-react"></i> React.js</span>
+                        <span class="skill-tag"><i class="fab fa-angular"></i> Angular</span>
+                        <span class="skill-tag"><i class="fas fa-layer-group"></i> Redux</span>
+                        <span class="skill-tag"><i class="fas fa-cube"></i> Context API</span>
+                        <span class="skill-tag"><i class="fas fa-paint-brush"></i> Material-UI</span>
+                        <span class="skill-tag"><i class="fas fa-mobile-alt"></i> Responsive Design</span>
+                    </div>
+                </div>
+
+                <!-- Backend -->
+                <div class="skill-group animate-on-scroll">
+                    <h3><i class="fas fa-server"></i> Backend</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="fas fa-leaf"></i> Spring Boot</span>
+                        <span class="skill-tag"><i class="fas fa-shield-alt"></i> Spring Security</span>
+                        <span class="skill-tag"><i class="fas fa-bolt"></i> FastAPI</span>
+                        <span class="skill-tag"><i class="fas fa-server"></i> Express.js</span>
+                        <span class="skill-tag"><i class="fas fa-wrench"></i> REST APIs</span>
+                        <span class="skill-tag"><i class="fas fa-project-diagram"></i> GraphQL</span>
+                    </div>
+                </div>
+
+                <!-- Databases -->
+                <div class="skill-group animate-on-scroll">
+                    <h3><i class="fas fa-database"></i> Databases</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="fas fa-elephant"></i> PostgreSQL</span>
+                        <span class="skill-tag"><i class="fas fa-leaf"></i> MongoDB</span>
+                        <span class="skill-tag"><i class="fas fa-memory"></i> Redis</span>
+                        <span class="skill-tag"><i class="fas fa-stream"></i> Kafka</span>
+                        <span class="skill-tag"><i class="fas fa-table"></i> SQL</span>
+                    </div>
+                </div>
+
+                <!-- Cloud & DevOps -->
+                <div class="skill-group animate-on-scroll">
+                    <h3><i class="fas fa-cloud"></i> Cloud & DevOps</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="fab fa-aws"></i> AWS</span>
+                        <span class="skill-tag"><i class="fas fa-cube"></i> Docker</span>
+                        <span class="skill-tag"><i class="fas fa-dharmachakra"></i> Kubernetes</span>
+                        <span class="skill-tag"><i class="fab fa-git-alt"></i> Git</span>
+                        <span class="skill-tag"><i class="fab fa-github"></i> GitHub</span>
+                        <span class="skill-tag"><i class="fas fa-infinity"></i> CI/CD</span>
+                    </div>
+                </div>
+
+                <!-- AI/ML -->
+                <div class="skill-group animate-on-scroll">
+                    <h3><i class="fas fa-brain"></i> AI/ML</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="fas fa-robot"></i> TensorFlow</span>
+                        <span class="skill-tag"><i class="fas fa-fire"></i> PyTorch</span>
+                        <span class="skill-tag"><i class="fas fa-magic"></i> OpenAI APIs</span>
+                        <span class="skill-tag"><i class="fas fa-link"></i> LangChain</span>
+                        <span class="skill-tag"><i class="fas fa-language"></i> LLM Integration</span>
+                        <span class="skill-tag"><i class="fas fa-search"></i> RAG</span>
+                    </div>
+                </div>
+
+                <!-- Tools & Others -->
+                <div class="skill-group animate-on-scroll">
+                    <h3><i class="fas fa-tools"></i> Tools & Others</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="fab fa-jira"></i> Jira</span>
+                        <span class="skill-tag"><i class="fas fa-code-branch"></i> Webpack</span>
+                        <span class="skill-tag"><i class="fas fa-box"></i> NPM</span>
+                        <span class="skill-tag"><i class="fas fa-graduation-cap"></i> Mockito</span>
+                        <span class="skill-tag"><i class="fas fa-check"></i> Unit Testing</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience section-animate">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Professional Experience</h2>
+            <div class="experience-timeline">
+                <!-- Reva.ai Experience -->
+                <div class="timeline-item animate-on-scroll">
+                    <div class="timeline-year">
+                        <span class="year">May 2025 - Aug 2025</span>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div class="company-logo">
+                                <img src="images/reva_ai_logo.jpeg" alt="Reva.ai Logo" class="company-logo-img">
+                            </div>
+                            <div class="position-info">
+                                <h3>Software Engineer Intern - AI</h3>
+                                <h4>Reva.ai · Remote, United States</h4>
+                            </div>
+                        </div>
+                        <div class="timeline-details">
+                            <ul>
+                                <li>
+                                    <i class="fas fa-aws"></i>
+                                    Built and deployed 12 Python AWS Lambdas using API Gateway with DynamoDB for multi-tenant config management,
+                                    eliminating 30GB data across 20+ Kubernetes clusters and saving $2K/year
+                                </li>
+                                <li>
+                                    <i class="fab fa-java"></i>
+                                    Enhanced reliability of long-running AI workflows by improving Java Spring Boot Temporal service,
+                                    unifying error handling for 59 activities into 4 standardized types, reducing manual retries by 98%
+                                </li>
+                                <li>
+                                    <i class="fas fa-bolt"></i>
+                                    Developed non-blocking customer usage logging in FastAPI-based AI service for LangChain and Amazon Bedrock,
+                                    streaming to CloudWatch for real-time billing and cutting latency by 120ms
+                                </li>
+                                <li>
+                                    <i class="fas fa-users"></i>
+                                    Built Python AWS Lambda with Cognito triggers to sync 100% of SSO users (Okta, Microsoft, Google)
+                                    in real-time to on-prem DBs via custom REST API
+                                </li>
+                                <li>
+                                    <i class="fas fa-vial"></i>
+                                    Owned integration testing with real mock events for Lambdas and Spring Boot services,
+                                    boosting test speed by 40%
+                                </li>
+                            </ul>
+                            <div class="tech-stack">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">FastAPI</span>
+                                <span class="tech-tag">AWS</span>
+                                <span class="tech-tag">Lambda</span>
+                                <span class="tech-tag">Java</span>
+                                <span class="tech-tag">Spring Boot</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RabbitLoader Experience -->
+                <div class="timeline-item animate-on-scroll">
+                    <div class="timeline-year">
+                        <span class="year">Sep 2023 - Dec 2023</span>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div class="company-logo">
+                                <img src="images/rabbitloader_logo.jpeg" alt="RabbitLoader Logo" class="company-logo-img">
+                            </div>
+                            <div class="position-info">
+                                <h3>Frontend Engineer Intern</h3>
+                                <h4>RabbitLoader · Remote</h4>
+                            </div>
+                        </div>
+                        <div class="timeline-details">
+                            <ul>
+                                <li>
+                                    <i class="fab fa-react"></i>
+                                    Led migration of core micro-frontend from React v14 to v18, fixing legacy bugs
+                                    and preventing regressions in production
+                                </li>
+                                <li>
+                                    <i class="fas fa-compress"></i>
+                                    Optimized application architecture with Redux and load distribution,
+                                    cutting bundle size from 300MB to 3MB using Webpack, reducing load time from 12s to 3.5s
+                                </li>
+                                <li>
+                                    <i class="fas fa-tachometer-alt"></i>
+                                    Boosted UI responsiveness by 400% with infinite scroll and lazy loading,
+                                    delivering components 5× faster using Material-UI
+                                </li>
+                                <li>
+                                    <i class="fas fa-code"></i>
+                                    Developed mock APIs in Node.js for E2E testing, enabling faster prototyping
+                                    and reducing QA cycles by 30%
+                                </li>
+                            </ul>
+                            <div class="tech-stack">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">TypeScript</span>
+                                <span class="tech-tag">Redux</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">Material-UI</span>
+                                <span class="tech-tag">Webpack</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cambridge Technology Experience -->
+                <div class="timeline-item animate-on-scroll">
+                    <div class="timeline-year">
+                        <span class="year">May 2023 - Jul 2023</span>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div class="company-logo">
+                                <img src="images/cambridge_technology_logo.jpeg" alt="Cambridge Technology Logo" class="company-logo-img">
+                            </div>
+                            <div class="position-info">
+                                <h3>Software Developer Intern</h3>
+                                <h4>Cambridge Technology Enterprises Limited · Hyderabad, India</h4>
+                            </div>
+                        </div>
+                        <div class="timeline-details">
+                            <ul>
+                                <li>
+                                    <i class="fab fa-java"></i>
+                                    Built 2 Java Spring Boot microservices to ingest, validate, and serve 2M+/yr medical-diagnosis records
+                                </li>
+                                <li>
+                                    <i class="fas fa-stream"></i>
+                                    Streamed real-time data from Spring service via RabbitMQ to notification service and 2 Kafka topics
+                                    for ML team analysis, reducing failures by 10GB+ during peak stages
+                                </li>
+                                <li>
+                                    <i class="fas fa-memory"></i>
+                                    Optimized data retrieval with Redis caching, reducing database calls by 65%
+                                    and latency by 2s/API request
+                                </li>
+                                <li>
+                                    <i class="fas fa-check-circle"></i>
+                                    Developed integration tests using Mockito, increasing code coverage by 46%
+                                    and significantly reducing production bugs
+                                </li>
+                            </ul>
+                            <div class="tech-stack">
+                                <span class="tech-tag">Java</span>
+                                <span class="tech-tag">Spring Boot</span>
+                                <span class="tech-tag">PostgreSQL</span>
+                                <span class="tech-tag">MongoDB</span>
+                                <span class="tech-tag">Redis</span>
+                                <span class="tech-tag">RabbitMQ</span>
+                                <span class="tech-tag">Kafka</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Rock Interview Experience -->
+                <div class="timeline-item animate-on-scroll">
+                    <div class="timeline-year">
+                        <span class="year">May 2022 - Aug 2022</span>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div class="company-logo">
+                                <img src="images/rock_interview_logo.jpeg" alt="Rock Interview Logo" class="company-logo-img">
+                            </div>
+                            <div class="position-info">
+                                <h3>Software Engineer Intern</h3>
+                                <h4>Rock Interview · Bengaluru, India</h4>
+                            </div>
+                        </div>
+                        <div class="timeline-details">
+                            <ul>
+                                <li>
+                                    <i class="fab fa-node-js"></i>
+                                    Built Express.js APIs to transform data from 4 third-party sources,
+                                    reducing processing time by 40% for DE team pipelines via async operations
+                                </li>
+                                <li>
+                                    <i class="fas fa-bug"></i>
+                                    Fixed 7+ critical Express.js API bugs using UUID tracing and structured logging,
+                                    cutting production failures by 40% through QA and DE team collaboration
+                                </li>
+                            </ul>
+                            <div class="tech-stack">
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">Express.js</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">REST APIs</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education section-animate">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Education</h2>
+            <div class="education-grid">
+                <div class="education-card animate-on-scroll">
+                    <div class="education-icon">
+                        <img src="images/north_carolina_state_university_logo.jpeg" alt="NC State Logo" class="education-logo-img">
+                    </div>
+                    <div class="education-content">
+                        <h3>Master of Science in Computer Science</h3>
+                        <h4>North Carolina State University</h4>
+                        <p class="education-date">Aug 2022 - May 2024</p>
+                        <p class="education-gpa">GPA: 3.75/4.00</p>
+                        <ul>
+                            <li>Specialization in Artificial Intelligence and Machine Learning</li>
+                            <li>Graduate Teaching Assistant for Programming Principles</li>
+                            <li>Research Assistant focusing on NLP and Computer Vision</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="education-card animate-on-scroll">
+                    <div class="education-icon">
+                        <img src="images/iiest_logo.jpeg" alt="IIEST Logo" class="education-logo-img">
+                    </div>
+                    <div class="education-content">
+                        <h3>Bachelor of Technology in Computer Science</h3>
+                        <h4>IIEST Shibpur</h4>
+                        <p class="education-date">2016 - 2020</p>
+                        <p class="education-gpa">GPA: 8.69/10.00</p>
+                        <ul>
+                            <li>Relevant Coursework: Data Structures, Algorithms, Web Development, Database Systems</li>
+                            <li>Head of Technical Society</li>
+                            <li>Organized multiple coding competitions and hackathons</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section-animate">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Personal Projects</h2>
+            <div class="projects-grid">
+                <!-- The Robot Driver -->
+                <div class="project-card animate-on-scroll">
+                    <div class="project-image">
+                        <div class="project-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <span>Oct 2025 - Present</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>The Robot Driver - AI Agentic Web Automation Tool</h3>
+                        <p class="project-description">
+                            Revolutionary AI-powered web automation platform that transforms natural language prompts into
+                            automated browser actions. Built with FastAPI backend and integrated with cutting-edge AI models.
+                        </p>
+                        <div class="project-achievements">
+                            <ul>
+                                <li>
+                                    <i class="fas fa-magic"></i>
+                                    Implemented Gemini API integration for intelligent web page analysis and action prediction
+                                </li>
+                                <li>
+                                    <i class="fas fa-code-branch"></i>
+                                    Set up complete CI/CD pipeline using GitHub Actions for automated testing and deployment
+                                </li>
+                                <li>
+                                    <i class="fas fa-cube"></i>
+                                    Containerized the entire application stack with Docker for seamless deployment
+                                </li>
+                                <li>
+                                    <i class="fas fa-bolt"></i>
+                                    Optimized response time by 60% through efficient caching and async processing
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">FastAPI</span>
+                            <span class="tech-tag">Gemini API</span>
+                            <span class="tech-tag">Playwright MCP</span>
+                            <span class="tech-tag">Docker</span>
+                            <span class="tech-tag">GitHub Actions</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/konetichandrakant/the-robot-driver" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DrawIt -->
+                <div class="project-card animate-on-scroll">
+                    <div class="project-image">
+                        <div class="project-icon">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <span>Nov 2023 - Present</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>DrawIt - Multiplayer Drawing Game</h3>
+                        <p class="project-description">
+                            Interactive real-time multiplayer drawing and guessing game supporting multiple concurrent rooms
+                            with live canvas synchronization and AI-powered drawing recognition.
+                        </p>
+                        <div class="project-achievements">
+                            <ul>
+                                <li>
+                                    <i class="fas fa-users"></i>
+                                    Implemented real-time multiplayer gameplay using Socket.io supporting 100+ concurrent users
+                                </li>
+                                <li>
+                                    <i class="fas fa-tachometer-alt"></i>
+                                    Boosted UI performance by 300% with lazy loading and optimized component rendering
+                                </li>
+                                <li>
+                                    <i class="fas fa-brain"></i>
+                                    Integrated ML5.js for real-time drawing recognition with 85% accuracy
+                                </li>
+                                <li>
+                                    <i class="fas fa-shield-alt"></i>
+                                    Enhanced security with JWT-based authentication and Redis session management
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Redux</span>
+                            <span class="tech-tag">Socket.io</span>
+                            <span class="tech-tag">Material-UI</span>
+                            <span class="tech-tag">ML5.js</span>
+                            <span class="tech-tag">Redis</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/konetichandrakant/drawit" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Personal AI Chatbot -->
+                <div class="project-card animate-on-scroll">
+                    <div class="project-image">
+                        <div class="project-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <span>Mar 2025</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Personal AI Chatbot</h3>
+                        <p class="project-description">
+                            Intelligent conversational AI system that leverages personal chat history to provide
+                            context-aware responses, featuring advanced RAG implementation and memory optimization.
+                        </p>
+                        <div class="project-achievements">
+                            <ul>
+                                <li>
+                                    <i class="fas fa-search"></i>
+                                    Built RAG system with FAISS vector database for efficient context retrieval
+                                </li>
+                                <li>
+                                    <i class="fas fa-chart-line"></i>
+                                    Optimized token usage by 5x through intelligent context compression
+                                </li>
+                                <li>
+                                    <i class="fas fa-database"></i>
+                                    Designed efficient message ID-based retrieval system reducing latency by 40%
+                                </li>
+                                <li>
+                                    <i class="fas fa-api"></i>
+                                    Integrated multiple social media Export APIs for seamless data ingestion
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">FastAPI</span>
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Gemini API</span>
+                            <span class="tech-tag">FAISS</span>
+                            <span class="tech-tag">LangChain</span>
+                            <span class="tech-tag">Material-UI</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section-animate">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Let's Connect</h2>
+            <div class="contact-content">
+                <div class="contact-info animate-on-scroll">
+                    <div class="contact-text">
+                        <h3>Ready to collaborate on your next project?</h3>
+                        <p>
+                            I'm always excited to work on challenging projects that push the boundaries of technology.
+                            Whether you have a project in mind or just want to say hello, feel free to reach out!
+                        </p>
+                    </div>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-info-text">
+                                <h4>Email</h4>
+                                <a href="mailto:chandrakantkonetius@gmail.com">chandrakantkonetius@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-info-text">
+                                <h4>Phone</h4>
+                                <a href="tel:+19193956914">+1 (919) 395-6914</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-info-text">
+                                <h4>Location</h4>
+                                <span>Raleigh, NC, USA</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/chandrakant-koneti" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://github.com/CKoneti" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://twitter.com/chandrakantk" target="_blank" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                            <span>Twitter</span>
+                        </a>
+                        <a href="mailto:chandrakantkonetius@gmail.com" class="social-link">
+                            <i class="fas fa-envelope"></i>
+                            <span>Email</span>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form animate-on-scroll" id="contactForm">
+                    <div class="form-header">
+                        <h3>Send a Message</h3>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        <label for="name">Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        <label for="subject">Subject</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                        <label for="message">Message</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i>
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Chandrakant Koneti. All rights reserved.</p>
+                <p>Designed and built with <i class="fas fa-heart pulse"></i> using modern web technologies</p>
+            </div>
+            <div class="footer-links">
+                <a href="https://github.com/CKoneti" target="_blank" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/chandrakant-koneti" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="mailto:chandrakantkonetius@gmail.com" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/effects.js"></script>
+
+  </body>
+</html>
