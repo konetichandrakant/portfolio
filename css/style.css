@@ -638,11 +638,90 @@ section {
 }
 
 /* Impact Metrics Styles */
-.impact-metrics {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+.experience-highlights {
+    display: flex;
+    align-items: center;
     gap: 2rem;
+    margin: 2rem 0;
+    flex-wrap: wrap;
+}
+
+.company-logos-mini {
+    display: flex;
+    gap: 1rem;
+}
+
+.logo-mini {
+    width: 50px;
+    height: 50px;
+    background: var(--gradient-primary);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.9rem;
+    box-shadow: var(--shadow-md);
+    transition: var(--transition-normal);
+    cursor: pointer;
+}
+
+.logo-mini:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-lg);
+}
+
+.tech-focus-tags {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.tech-focus-tag {
+    background: linear-gradient(135deg, var(--bg-secondary) 0%, white 100%);
+    border: 2px solid var(--border-color);
+    color: var(--text-secondary);
+    padding: 0.75rem 1.25rem;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: var(--transition-normal);
+    box-shadow: var(--shadow-sm);
+}
+
+.tech-focus-tag:hover {
+    border-color: var(--primary-color);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+    color: var(--text-primary);
+}
+
+.impact-metrics {
     margin: 2.5rem 0;
+}
+
+.impact-metrics h4 {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 1.3rem;
+    color: var(--text-primary);
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+.impact-metrics h4 i {
+    color: var(--primary-color);
+}
+
+.metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
     padding: 2rem;
     background: linear-gradient(135deg, var(--bg-secondary) 0%, white 100%);
     border-radius: var(--border-radius-xl);
@@ -676,10 +755,122 @@ section {
 }
 
 .metric-label {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     color: var(--text-secondary);
     line-height: 1.4;
     font-weight: 500;
+}
+
+.technical-achievements {
+    margin: 2.5rem 0;
+}
+
+.technical-achievements h4 {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 1.3rem;
+    color: var(--text-primary);
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+.technical-achievements h4 i {
+    color: var(--primary-color);
+}
+
+.achievement-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.achievement {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+    padding: 1.5rem;
+    background: var(--bg-secondary);
+    border-radius: var(--border-radius-lg);
+    transition: var(--transition-normal);
+}
+
+.achievement:hover {
+    transform: translateX(10px);
+    box-shadow: var(--shadow-md);
+}
+
+.achievement-icon {
+    width: 60px;
+    height: 60px;
+    background: var(--gradient-primary);
+    color: white;
+    border-radius: var(--border-radius-lg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    flex-shrink: 0;
+    box-shadow: var(--shadow-md);
+}
+
+.achievement-content {
+    flex: 1;
+}
+
+.achievement-content strong {
+    display: block;
+    font-size: 1.2rem;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.achievement-content p {
+    color: var(--text-light);
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+.current-focus {
+    margin: 2.5rem 0;
+    padding: 2rem;
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+    border-radius: var(--border-radius-xl);
+    border-left: 4px solid var(--primary-color);
+}
+
+.current-focus h4 {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 1.3rem;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.current-focus h4 i {
+    color: var(--primary-color);
+}
+
+.current-focus p {
+    color: var(--text-secondary);
+    line-height: 1.7;
+    font-size: 1rem;
+}
+
+.mission-statement {
+    margin-top: 2.5rem;
+    padding: 2rem;
+    background: var(--gradient-primary);
+    color: white;
+    border-radius: var(--border-radius-xl);
+    font-size: 1.05rem;
+    line-height: 1.8;
+    text-align: center;
+    font-weight: 500;
+    box-shadow: var(--shadow-lg);
 }
 
 /* Skills Section */
@@ -910,16 +1101,6 @@ section {
     flex-shrink: 0;
 }
 
-.year {
-    font-size: 1.125rem;
-    font-weight: 700;
-    color: var(--primary-color);
-    background: rgba(102, 126, 234, 0.1);
-    padding: 0.5rem 1rem;
-    border-radius: 50px;
-    display: inline-block;
-}
-
 .timeline-content {
     flex: 1;
     background: white;
@@ -928,6 +1109,12 @@ section {
     box-shadow: var(--shadow-lg);
     position: relative;
     margin-left: 2rem;
+    transition: var(--transition-normal);
+}
+
+.timeline-content:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-2xl);
 }
 
 .timeline-content::before {
@@ -939,6 +1126,7 @@ section {
     height: 20px;
     background: var(--primary-color);
     border-radius: 50%;
+    border: 4px solid white;
     box-shadow: 0 0 0 4px white, 0 0 0 6px var(--primary-color);
 }
 
@@ -1033,6 +1221,35 @@ section {
     transform: translateY(-2px);
 }
 
+/* Timeline Year Badge Styles */
+.timeline-year-badge,
+.education-year-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: linear-gradient(135deg, var(--primary-color), #764ba2);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-top: 0.5rem;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition-normal);
+}
+
+.timeline-year-badge:hover,
+.education-year-badge:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.timeline-year-badge i,
+.education-year-badge i {
+    font-size: 0.85rem;
+    opacity: 0.9;
+}
+
 /* Education Section */
 .education {
     background: var(--bg-primary);
@@ -1046,7 +1263,6 @@ section {
 }
 
 .education-item {
-    display: flex;
     margin-bottom: 4rem;
     position: relative;
 }
@@ -1055,38 +1271,7 @@ section {
     margin-bottom: 0;
 }
 
-.education-year {
-    flex: 0 0 200px;
-    text-align: right;
-    padding-right: 3rem;
-    position: relative;
-}
-
-.year {
-    font-size: 1.125rem;
-    font-weight: 600;
-    color: var(--primary-color);
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    background: rgba(102, 126, 234, 0.1);
-    border-radius: 25px;
-}
-
-.year-dot {
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 20px;
-    height: 20px;
-    background: var(--primary-color);
-    border-radius: 50%;
-    border: 4px solid white;
-    box-shadow: 0 0 0 4px var(--bg-primary);
-}
-
 .education-content-card {
-    flex: 1;
     background: white;
     border-radius: var(--border-radius-xl);
     box-shadow: var(--shadow-lg);
@@ -1095,7 +1280,7 @@ section {
 }
 
 .education-content-card:hover {
-    transform: translateX(10px);
+    transform: translateY(-5px);
     box-shadow: var(--shadow-2xl);
 }
 
@@ -1150,15 +1335,20 @@ section {
     display: inline-flex;
     align-items: center;
     padding: 0.35rem 0.75rem;
-    background: var(--gradient-primary);
-    color: white;
+    color: var(--text-secondary);
     border-radius: 20px;
     font-size: 0.85rem;
     font-weight: 600;
+    border: 1px solid var(--border-color);
+    background: transparent;
+    transition: var(--transition-normal);
 }
 
-.location-badge {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+.gpa-badge:hover,
+.location-badge:hover {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+    background: rgba(102, 126, 234, 0.05);
 }
 
 .education-details {
@@ -1785,10 +1975,10 @@ section {
     }
 
     .timeline-year {
-        width: 100%;
-        text-align: left;
-        padding-left: 3rem;
+        width: 40px;
+        height: 40px;
         padding-right: 0;
+        padding-left: 0;
     }
 
     .timeline-content {
@@ -1931,6 +2121,131 @@ section {
 
     .footer-links {
         gap: 1rem;
+    }
+
+    /* Education Section Mobile Styles */
+    .education-item {
+        margin-bottom: 3rem;
+    }
+
+    .education-content-card {
+        width: 100%;
+    }
+
+    .education-content-card:hover {
+        transform: none;
+    }
+
+    .education-header {
+        padding: 1.5rem;
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .school-logo {
+        width: 80px;
+        height: 80px;
+        margin-right: 0;
+    }
+
+    .school-info {
+        text-align: center;
+    }
+
+    .school-info h3 {
+        font-size: 1.25rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .school-info h4 {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .education-meta {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+    .gpa-badge,
+    .location-badge {
+        font-size: 0.8rem;
+        padding: 0.3rem 0.8rem;
+    }
+
+    .education-details {
+        padding: 1.5rem;
+    }
+
+    .education-section {
+        margin-bottom: 1.5rem;
+    }
+
+    .education-section h5 {
+        font-size: 1rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .course-grid {
+        gap: 0.5rem;
+    }
+
+    .course-tag {
+        font-size: 0.8rem;
+        padding: 0.3rem 0.8rem;
+    }
+
+    .research-item {
+        padding: 1rem;
+    }
+
+    .research-role {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .research-role strong {
+        font-size: 1rem;
+    }
+
+    .research-professor {
+        font-size: 0.9rem;
+    }
+
+    .research-highlights {
+        padding-left: 1rem;
+        margin-top: 0.75rem;
+    }
+
+    .research-highlights li {
+        font-size: 0.9rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .achievement-list {
+        gap: 1rem;
+    }
+
+    .achievement-item {
+        gap: 0.75rem;
+    }
+
+    .achievement-item i {
+        font-size: 1rem;
+        width: 24px;
+        height: 24px;
+    }
+
+    .achievement-item strong {
+        font-size: 0.95rem;
+    }
+
+    .achievement-item p {
+        font-size: 0.85rem;
     }
 }
 
